@@ -13,8 +13,8 @@
 
             <div class="topNav">
                 <a href="/">Home</a>
-                <a href="/eligible">Eligible</a>
-                <a class="active" href="/notEligible">Not Eligible</a>
+                <a class="active" href="/eligible">Eligible</a>
+                <a href="/notEligible">Not Eligible</a>
                 <a href="/about">About Us</a>
             </div>
 
@@ -23,7 +23,6 @@
 
             <hr style="height: 3px">
             <br>
-
             <form style="text-align: center">
                 <label for="firstName"><b>First Name:</b></label>
                 <br>
@@ -71,14 +70,15 @@
                 <br>
             </form>
 
-
             <div class="text-center">
                 <br>
+                <a href="/eligible"><button class="btn btn-outline-success" style="width: 270px">GO BACK</button></a>
                 <a href="/notEligiblePage" download="Evidence Sheet"><button class="btn btn-outline-success" style="width: 270px">Download</button></a>
                 <button class="btn btn-outline-success" onclick="window.print();" style="width: 270px">PRINT</button>
             </div>
             <br>
             <hr style="height: 3px">
+
         {% endblock %}
     </body>
 </html>

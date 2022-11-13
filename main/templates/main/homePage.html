@@ -1,23 +1,47 @@
+{% extends 'main/base.html' %}
+
 <!DOCTYPE html>
 
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Housing Duty Solicitor</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" ><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+        <title></title>
     </head>
 
     <body>
-        <h1 style="text-align: center">Housing Duty Solicitor</h1>
-        <p style="text-align: center">This Application is for tenants of social landlords in Southwark and Lambeth who are being taken to court for rent arrears.<p>
-        <p style="text-align: center">This Application is only suitable for those who are NOT eligible for Legal Aid.</p>
-        <p style="text-align: center">If you are eligible for Legal Aid, this is your best outcome.</p>
-        <h2 style="text-align: center">Click The Link Below To Check If You Are Eligible For Legal Aid</h2>
-        <h3 style="text-align: center"><a href="https://www.gov.uk/check-legal-aid" target="_blank">https://www.gov.uk/check-legal-aid</a></h3>
+        {% block content %}
 
-        <div class="text-center">
-            <a href="/eligible" ><button class="btn btn-primary btn-small" style="width: 250px">ELIGIBLE FOR LEGAL AID</button></a>
-            <a href="/notEligible"><button class="btn btn-primary btn-small" style="width: 250px">NOT ELIGIBLE FOR LEGAL AID</button></a>
-        </div>
+            <div class="topNav">
+                <a class="active" href="/">Home</a>
+                <a href="/eligible">Eligible</a>
+                <a href="/notEligible">Not Eligible</a>
+                <a href="/about">About Us</a>
+            </div>
+
+
+            <h1 style="text-align: center"><b><u>Housing Duty Solicitor</u></b></h1>
+
+            <p style="text-align: center">This Application is for tenants of social landlords in Southwark and Lambeth who are being taken to court for rent arrears.<p>
+            <p style="text-align: center">This Application is only suitable for those who are NOT eligible for Legal Aid.</p>
+            <p style="text-align: center">If you are eligible for Legal Aid, this is your best outcome.</p>
+
+            <hr style="height: 3px">
+            <br>
+
+            <h4 style="text-align: center"><b>Click The Link Below To Check If You Are Eligible For Legal Aid</b></h4>
+            <h5 style="text-align: center"><a href="https://www.gov.uk/check-legal-aid" target="_blank">https://www.gov.uk/check-legal-aid</a></h5>
+
+            <div class="text-center">
+                <p>If you are eligible for legal aid select the option on the left, if you are NOT eligible select the option on the right.</p>
+                <a href="/eligible" ><button class="btn btn-outline-success btn-small" style="width: 270px;">ELIGIBLE FOR LEGAL AID</button></a>
+                <a href="/notEligible"><button class="btn btn-outline-success btn-small" style="width: 270px">NOT ELIGIBLE FOR LEGAL AID</button></a>
+
+            </div>
+
+            <br>
+            <hr style="height: 3px">
+            <br>
+
+        {% endblock content %}
     </body>
 </html>

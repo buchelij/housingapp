@@ -1,0 +1,33 @@
+{% extends 'main/base.html' %}
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+    </head>
+
+    <body>
+        {% block content %}
+
+            <div class="topNav">
+                <a href="/">Home</a>
+                <a href="/eligible">Eligible</a>
+                <a href="/notEligible">Not Eligible</a>
+                <a class="active" href="/about">About Us</a>
+            </div>
+
+            <h1 style="text-align: center"><b><u>Housing Duty Solicitor</u></b></h1>
+            <h5 style="text-align: center">About Us</h5>
+
+            <hr style="height: 3px">
+
+            <div style="text-align: center">
+                <h6>     This is a Web Application for you if you are a tenant living in social housing in Southwark and Lambeth and being taken to court for rent arrears.<br>     This app will help you find out whether you are eligible financially for legal aid.<br>     The app will also show you local housing solicitor who provide legal aid.<br>     The best possible outcome is you will be in contact with the solicitor before the day of your court hearing and discus if they will represent you in court.<br>     It is important to remember legal aid is limited, and you may be eligible and still not get it.<br>     This app is here to prompt you to go to court with the information you will input into this app.<br>     This is the same if you are not eligible.<br>     The information you provide can be printed and used on the day of your court hearing.<br>     If there is a duty solicitor there, they can quickly review your information and if not, the judge will have all the information they need.
+                </h6>
+            </div>
+
+        {% endblock content %}
+    </body>
+</html>

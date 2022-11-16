@@ -3,84 +3,89 @@
 <!DOCTYPE html>
 
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Elegible Form</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <title>Elegible Form</title>
+</head>
 
-    <body>
-        {% block content %}
+<body>
+{% block content %}
 
-            <div class="topNav">
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a class="active" href="/eligible">Eligible</a></li>
-                    <li><a href="/notEligible">Not Eligible</a></li>
-                    <li><a href="/about">About Us</a></li>
-                </ul>
-            </div>
+    <div class="topNav">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a class="active" href="/eligible">Eligible</a></li>
+            <li><a href="/notEligible">Not Eligible</a></li>
+            <li><a href="/about">About Us</a></li>
+        </ul>
+    </div>
 
-            <h1 style="text-align: center"><b><u>Housing Duty Solicitor</u></b></h1>
-            <h5 style="text-align: center">You Are Not Eligible For Legal Aid.</h5>
+    <h1 style="text-align: center"><b><u>Housing Duty Solicitor</u></b></h1>
+    <h5 style="text-align: center">You Are Not Eligible For Legal Aid.</h5>
 
-            <hr style="height: 3px">
-            <br>
-            <form style="text-align: center">
-                <label for="firstName"><b>First Name:</b></label>
-                <br>
-                <input type="text" id="firstName" name="firstName" size="100px">
-                <br>
+    <hr style="height: 3px">
+    <br>
+    <form style="text-align: center">
+        <label for="firstName"><b>First Name:</b></label>
+        <br>
+        <input type="text" id="firstName" name="firstName" size="100px">
+        <br>
 
-                <label for="lastName"><b>Last Name:</b></label>
-                <br>
-                <input type="text" id="lastName" name="lastName" size="100px">
-                <br>
+        <label for="lastName"><b>Last Name:</b></label>
+        <br>
+        <input type="text" id="lastName" name="lastName" size="100px">
+        <br>
 
-                <label for="rent"><b>How Much Rent Do You Owe?:</b></label>
-                <br>
-                <input type="text" id="rent" name="rent" size="100px">
-                <br>
+        <label for="rent"><b>How Much Rent Do You Owe?:</b></label>
+        <br>
+        <input type="text" id="rent" name="rent" size="100px">
+        <br>
 
-                <label for="lengthLived"><b>How Long Have You Lived In Your Home?:</b></label>
-                <br>
-                <input type="text" id="lengthLived" name="lengthLived" size="100px">
-                <br>
+        <label for="lengthLived"><b>How Long Have You Lived In Your Home?:</b></label>
+        <br>
+        <input type="text" id="lengthLived" name="lengthLived" size="100px">
+        <br>
 
-                <label for="household"><b>Who Lives With You In Your Household?:</b></label>
-                <br>
-                <input type="text" id="household" name="household" size="100px">
-                <br>
+        <label for="household"><b>Who Lives With You In Your Household?:</b></label>
+        <br>
+        <input type="text" id="household" name="household" size="100px">
+        <br>
 
-                <label for="income"><b>What Is Your Income?:</b></label>
-                <br>
-                <input type="text" id="income" name="income" size="100px">
-                <br>
+        <label for="income"><b>What Is Your Income?:</b></label>
+        <br>
+        <input type="text" id="income" name="income" size="100px">
+        <br>
 
-                <label for="physicalHealth"><b>Is There Anyone In Your Household With Any Significant Physical Problems?:</b></label>
-                <br>
-                <input type="text" id="physicalHealth" name="physicalHealth" size="100px">
-                <br>
+        <label for="physicalHealth"><b>Is There Anyone In Your Household With Any Significant Physical
+            Problems?:</b></label>
+        <br>
+        <input type="text" id="physicalHealth" name="physicalHealth" size="100px">
+        <br>
 
-                <label for="mentalHealth"><b>Is There Anyone In Your Household With Any Mental Health Problems?:</b></label>
-                <br>
-                <input type="text" id="mentalHealth" name="mentalHealth" size="100px">
-                <br>
+        <label for="mentalHealth"><b>Is There Anyone In Your Household With Any Mental Health Problems?:</b></label>
+        <br>
+        <input type="text" id="mentalHealth" name="mentalHealth" size="100px">
+        <br>
 
-                <label for="disrepair"><b>Is There Any Disrepair To Your Home?:</b></label>
-                <br>
-                <input type="text" id="disrepair" name="disrepair" size="100px">
-                <br>
-            </form>
+        <label for="disrepair"><b>Is There Any Disrepair To Your Home?:</b></label>
+        <br>
+        <input type="text" id="disrepair" name="disrepair" size="100px">
+        <br>
+    </form>
 
-            <div class="text-center">
-                <br>
-                <a href="/eligible"><button class="btn btn-outline-success" style="width: 270px">GO BACK</button></a>
-                <a href="/notEligiblePage" download="Evidence Sheet"><button class="btn btn-outline-success" style="width: 270px">Download</button></a>
-                <button class="btn btn-outline-success" onclick="window.print();" style="width: 270px">PRINT</button>
-            </div>
-            <br>
-            <hr style="height: 3px">
+    <div class="text-center">
+        <br>
+        <a href="/eligible">
+            <button class="btn btn-outline-success" style="width: 270px">GO BACK</button>
+        </a>
+        <a href="/notEligiblePage" download="Evidence Sheet">
+            <button class="btn btn-outline-success" style="width: 270px">Download</button>
+        </a>
+        <button class="btn btn-outline-success" onclick="window.print();" style="width: 270px">PRINT</button>
+    </div>
+    <br>
+    <hr style="height: 3px">
 
-        {% endblock %}
-    </body>
+{% endblock %}
+</body>
 </html>
